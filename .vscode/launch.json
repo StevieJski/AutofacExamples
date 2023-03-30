@@ -1,5 +1,6 @@
 {
   "configurations": [
+
     {
       "cwd": "${workspaceFolder}/src/AspNetCore3Example",
       "env": {
