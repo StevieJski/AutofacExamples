@@ -13,6 +13,10 @@ public class Program
 {
     private static void Main()
     {
+        var tup = new {Name = "Nameo", Date = DateTime.Now};
+        var props = tup.GetType().GetProperties();
+        Console.WriteLine(props[0].Name );
+        Console.WriteLine(props[0].GetValue(tup));
         // Attribute metadata documentation can be found here:
         // https://autofac.readthedocs.io/en/latest/advanced/metadata.html
         var builder = new ContainerBuilder();
